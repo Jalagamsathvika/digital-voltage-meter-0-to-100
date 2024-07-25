@@ -1,0 +1,54 @@
+/*Flow chart*/
+         +-----------------+    
+	/	start      /
+	+-----------------+
+	        | 
+                v
+        +-------------------+
+        | Initialization:   |
+        |Configure settings |
+        |Define constants   |
+        | Initialize ADC    |
+        +-------------------+
+                |
+                v
+        +-------------------+
+        |Main Program Loop  |
+        |Read ADC Value     |
+        +-------------------+
+                | 
+                v
+        +----------------------------+
+        |Convert ADC Value to voltage|
+        |Voltage=(value*5.0)/1023.0  |
+        +----------------------------+
+                | 
+                v
+        +------------------------------+
+        |Scale Voltage to input voltage|
+        |Input Voltage= voltage*20.0   |
+        +------------------------------+
+                |
+                v
+        +------------------------------+
+        |Display Voltage on LCD:       |
+        |Format input voltage          |
+        |Set cursor                    |
+        |Write to LCD                  |
+        +------------------------------+
+                | 
+                v
+        +------------------------------+
+        | Delay:Wait(1sec)             |
+        +------------------------------+
+                |
+                v
+        +------------------------------+
+        |Repeat-Go back to main        |
+        |  program loop                |
+        +------------------------------+
+                | 
+                v
+            +-------------+
+           /    stop      /
+          +-------------+ 
